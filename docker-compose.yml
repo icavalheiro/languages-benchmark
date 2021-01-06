@@ -1,0 +1,16 @@
+version: "3"
+services:
+  cpp:
+    build: ./cplusplus/
+
+  csharp:
+    build: ./csharp/
+
+  javascript:
+    build: ./javascript/
+
+  php:
+    build: ./php/
+
+  python:
+    build: ./python/
