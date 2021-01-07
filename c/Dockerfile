@@ -4,9 +4,9 @@ RUN apk update && apk add g++
 
 WORKDIR /srv/app/
 
-COPY ./main.cpp /srv/app/main.cpp
+COPY ./main.c /srv/app/main.c
 
-RUN g++ main.cpp -O3 -march=native -o main
+RUN g++ main.c -O3 -march=native -o main
 
 RUN chmod +x main
 

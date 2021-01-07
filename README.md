@@ -26,7 +26,8 @@ AMD Ryzen 7 1700 3.1GHz
 | 5 | Ruby        | 0.42s |
 | 6 | JavaScript  | 0.46s |
 | 7 | Lua         | 0.47s |
-| 8 | Python      | 1.80s |
+| 8 | C (qsort)   | 0.54s |
+| 9 | Python      | 1.80s |
 
 
 # Running yourself
