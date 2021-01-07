@@ -20,3 +20,6 @@ services:
 
   ruby:
     build: ./ruby/
+
+  java:
+    build: ./java/
