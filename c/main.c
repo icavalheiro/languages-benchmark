@@ -1,15 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comp(const void *elem1, const void *elem2)
+int comp(int *a, int *b)
 {
-    int f = *((int *)elem1);
-    int s = *((int *)elem2);
-    if (f > s)
-        return 1;
-    if (f < s)
-        return -1;
-    return 0;
+    return *a - *b;
+}
+
+static void int_swap(int *a, int *b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+static void fast_sort(int *array, int n)
+{
+    int r, c;
+
+    //create heap
+    for (int i = n - 1; i >= 0; i--)
+    {
+        for (r = i; r * 2 < n; r = c)
+        {
+            c = r * 2 + 1;
+            if (c < (n - 1) && comp(&array[c], &array[c + 1]) < 0)
+                c++;
+
+            if (comp(&array[r], &array[c]) >= 0)
+                break;
+
+            int_swap(&array[r], &array[c]);
+        }
+    }
+
+    //sort
+    for (int i = n - 1; i > 0; i--)
+    {
+        int_swap(&array[0], &array[i]);
+        for (r = 0; r * 2 < i; r = c)
+        {
+            c = r * 2 + 1;
+            if (c < i - 1 && comp(&array[c], &array[c + 1]) < 0)
+                c++;
+
+            if (comp(&array[r], &array[c]) >= 0)
+                break;
+
+            int_swap(&array[r], &array[c]);
+        }
+    }
 }
 
 int main(int argc, char *argv[])
@@ -25,8 +64,7 @@ int main(int argc, char *argv[])
         array[i] = temp;
     }
 
-    qsort(array, n, sizeof(int), comp);
-
+    fast_sort(array, n);
     free(array);
     return 0;
 }

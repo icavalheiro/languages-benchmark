@@ -6,7 +6,7 @@ WORKDIR /srv/app/
 
 COPY ./main.c /srv/app/main.c
 
-RUN g++ main.c -O3 -march=native -o main
+RUN g++ main.c -O3 -march=native -o main -std=gnu++98
 
 RUN chmod +x main
 
