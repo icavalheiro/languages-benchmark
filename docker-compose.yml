@@ -17,3 +17,6 @@ services:
 
   lua:
     build: ./lua/
+
+  ruby:
+    build: ./ruby/
