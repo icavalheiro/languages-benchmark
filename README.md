@@ -12,7 +12,7 @@ Most languages will use the newest availalbe docker image (which means, newest l
 Just type:
 
 ```sh
-$ make run
+$ make result
 ```
 
 ![example](./example.png)
