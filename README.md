@@ -2,7 +2,7 @@
 
 This is pretty much to keep track on languages progress when it comes to performance. It's just a small test, with almost no real world scenario. But again, it is just to give us some idea and reference between those languages being tested.
 
-### Partials from 7/jan/2021
+### Result from 7/jan/2021
 
 #### Machine specs
 
@@ -17,6 +17,8 @@ AMD Ryzen 7 1700 3.1GHz
 
 #### Result
 
+| # | Language    | Time  |
+|---|-------------|-------|
 | 1 | C++         | 0.07s |
 | 2 | C#          | 0.12s |
 | 3 | Java        | 0.28s |
