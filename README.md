@@ -24,9 +24,9 @@ AMD Ryzen 7 1700 3.1GHz
 | 3 | Java        | 0.28s |
 | 4 | PHP         | 0.36s |
 | 5 | Ruby        | 0.42s |
-| 6 | Lua         | 0.47s |
-| 7 | Python      | 1.80s |
-| 8 | JavaScript  | 3.73s |
+| 6 | JavaScript  | 0.46s |
+| 7 | Lua         | 0.47s |
+| 8 | Python      | 1.80s |
 
 
 # Running yourself
