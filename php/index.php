@@ -1,7 +1,7 @@
 <?
 
 $n = $argv[1];
-$array = array_fill(0, $n, null);
+$array = Array();
 
 for($i = 0; $i < $n; $i ++)
 {

@@ -22,8 +22,8 @@ AMD Ryzen 7 1700 3.1GHz
 | 1 | C++         | 0.07s |
 | 2 | C#          | 0.12s |
 | 2 | C           | 0.12s |
-| 4 | Java        | 0.28s |
-| 5 | PHP         | 0.36s |
+| 4 | PHP         | 0.27s |
+| 5 | Java        | 0.28s |
 | 6 | Ruby        | 0.42s |
 | 7 | JavaScript  | 0.46s |
 | 8 | Lua         | 0.47s |
