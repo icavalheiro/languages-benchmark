@@ -17,17 +17,18 @@ AMD Ryzen 7 1700 3.1GHz
 
 #### Result
 
-| # | Language    | Time  |
-|---|-------------|-------|
-| 1 | C++         | 0.07s |
-| 2 | C#          | 0.12s |
-| 2 | C           | 0.12s |
-| 4 | PHP         | 0.27s |
-| 5 | Java        | 0.28s |
-| 6 | Ruby        | 0.42s |
-| 7 | JavaScript  | 0.46s |
-| 8 | Lua         | 0.47s |
-| 9 | Python      | 1.80s |
+| #  | Language    | Time  |
+|----|-------------|-------|
+| 1  | C++         | 0.07s |
+| 2  | C#          | 0.12s |
+| 2  | C           | 0.12s |
+| 4  | GO          | 0.22s |
+| 5  | PHP         | 0.27s |
+| 6  | Java        | 0.28s |
+| 7  | Ruby        | 0.42s |
+| 8  | JavaScript  | 0.46s |
+| 9  | Lua         | 0.47s |
+| 10 | Python      | 1.80s |
 
 
 # Running yourself
