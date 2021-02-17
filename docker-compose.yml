@@ -29,3 +29,6 @@ services:
 
   go:
     build: ./go/
+
+  dart:
+    build: ./dart/
