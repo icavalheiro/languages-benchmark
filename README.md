@@ -2,7 +2,7 @@
 
 This is pretty much to keep track on languages progress when it comes to performance. It's just a small test, with almost no real world scenario. But again, it is just to give us some idea and reference between those languages being tested.
 
-### Result from 7/jan/2021
+### Result from 17/feb/2021
 
 #### Machine specs
 
