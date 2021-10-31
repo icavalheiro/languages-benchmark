@@ -52,3 +52,15 @@ $ make result
 ```
 
 ![example](./example.png)
+
+# Future languages
+
+This is a list of languages that I want to create versions for (as soon as I have the free time):
+
+- nim
+- julia
+- rust
+- F#
+- closure
+- swifth
+- kotlin
