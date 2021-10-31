@@ -2,6 +2,22 @@
 
 This is pretty much to keep track on languages progress when it comes to performance. It's just a small test, with almost no real world scenario. But again, it is just to give us some idea and reference between those languages being tested.
 
+## The Algorithm
+
+The algorithm implemented in all languages is:
+ - Read the command line arguments, the first argument is an intergen `n` (the value used in the results is 800000)
+ - Convert `n` to a `int` or equivalent in the language
+ - Create an `array` of size `n` (when the language support setting a fixed size)
+ - For each position in the `array`, fill it with a random `int` between `0` and `n`
+ - then sort the `array`
+
+We are using the unix `time` program to measure the benchmark, so JIT languages with slow cold starts will suffer, that's just part of the benchmark
+
+First language to exit wins.
+
+This benchmark tests memory allocation, memory access and memory management. We are not testing threads, nor IO, but I assume IO won't change much on the result board (we are on 2021 and now every language supports async IO anyways), and threads would possibly only benefit GO for a small margin, not worth the hassle.
+
+
 ### Result from 31/oct/2021
 
 #### Machine specs
@@ -43,7 +59,7 @@ Yeah, C is not doing well, it should be on par with c++, BUT, since C lacks some
 
 Make sure you have `make` and `docker-compose` installed.
 
-Most languages will use the newest availalbe docker image (which means, newest language version), with the exception of `.net`, `haxe` and `java`, since the oficial maintaners don't supply a generic, non-version-specific alpine-based docker image or in the case of `haxe`, it's just messy.
+Most languages will use the newest availalbe docker image (which means, newest language version), with the exception of `.net`, `haxe` and `java`, since the oficial maintaners don't supply a generic, non-version-specific alpine-based docker image or in the case of `haxe`, it's just a mess.
 
 Just type:
 
