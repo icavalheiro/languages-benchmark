@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine as BUILD
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as BUILD
 
 WORKDIR /srv/app
 
@@ -10,9 +10,9 @@ COPY ./ /srv/app/
 
 RUN dotnet publish -c Release
 
-FROM mcr.microsoft.com/dotnet/runtime:5.0-alpine
+FROM mcr.microsoft.com/dotnet/runtime:6.0-alpine
 
-COPY --from=BUILD /srv/app/bin/Release/net5.0 /srv/app/
+COPY --from=BUILD /srv/app/bin/Release/net6.0 /srv/app/
 
 WORKDIR /srv/app/
 

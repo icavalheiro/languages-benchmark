@@ -1,10 +1,10 @@
 FROM golang:alpine
 
-WORKDIR /go/src/main
+WORKDIR /usr/local/go/src/main
 
-COPY ./main.go /go/src/main/main.go
+COPY ./main.go .
 
-RUN go build main
+RUN go build
 
 RUN chmod +x main
 
