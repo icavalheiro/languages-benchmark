@@ -7,7 +7,7 @@ This is pretty much to keep track on languages progress when it comes to perform
 #### Machine specs
 
 ```
-Pop_OS! 20.04 LTS
+Pop_OS! 21.04 LTS
 Docker version 20.10.7, build 20.10.7-0ubuntu1~21.04.2
 16 Gb RAM, DDR 4, Dual Channel, 2400Mhz
 nVidia GeForce GTX 1070 8GB GDDR5
