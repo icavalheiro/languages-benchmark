@@ -1,0 +1,13 @@
+-p .
+-m Main
+--library random
+
+--each
+
+--cpp ./cpp
+--library hxcpp
+
+--next
+
+--hl Main.hl
+--library hashlink

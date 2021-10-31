@@ -1,0 +1,6 @@
+-p .
+-m Main
+--library random
+
+--hl Main.hl
+--library hashlink

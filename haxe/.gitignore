@@ -1,0 +1,12 @@
+*.c
+*.n
+*.hl
+*.cpp
+*.sln
+*.cs
+bin/
+obj/
+test/
+cpp/
+csharp/
+hl-c/

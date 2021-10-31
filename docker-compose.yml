@@ -32,3 +32,13 @@ services:
 
   dart:
     build: ./dart/
+
+  haxe-hl:
+    build:
+      context: ./haxe/
+      dockerfile: haslink.Dockerfile
+
+  haxe-cpp:
+    build:
+      context: ./haxe/
+      dockerfile: cpp.Dockerfile

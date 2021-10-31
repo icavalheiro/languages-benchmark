@@ -17,19 +17,21 @@ AMD Ryzen 7 1700 3.1GHz
 
 #### Result
 
-| #  | Language    | Time  |
-|----|-------------|-------|
-| 1  | C++         | 0.07s |
-| 2  | C#          | 0.10s |
-| 3  | C           | 0.11s |
-| 4  | GO          | 0.19s |
-| 5  | JavaScript  | 0.21s |
-| 6  | PHP         | 0.27s |
-| 7  | Java        | 0.34s |
-| 8  | Ruby        | 0.36s |
-| 9  | Lua         | 0.42s |
-| 10 | Dart        | 0.56s |
-| 11 | Python      | 1.09s |
+| #  | Language      | Time  |
+|----|---------------|-------|
+| 1  | C++           | 0.07s |
+| 2  | Haxe (C++)    | 0.09s |
+| 3  | C#            | 0.10s |
+| 4  | C             | 0.11s |
+| 5  | GO            | 0.19s |
+| 6  | JavaScript    | 0.21s |
+| 7  | PHP           | 0.27s |
+| 8  | Haxe (HL/JIT) | 0.30s |
+| 9  | Java          | 0.34s |
+| 10 | Ruby          | 0.36s |
+| 11 | Lua           | 0.42s |
+| 12 | Dart          | 0.56s |
+| 13 | Python        | 1.09s |
 
 
 ###### The strange C case
@@ -41,7 +43,7 @@ Yeah, C is not doing well, it should be on par with c++, BUT, since C lacks some
 
 Make sure you have `make` and `docker-compose` installed.
 
-Most languages will use the newest availalbe docker image (which means, newest language version), with the exception of `.net` and `java`, since the oficial maintaners don't supply a generic, non-version-specific alpine-based docker image.
+Most languages will use the newest availalbe docker image (which means, newest language version), with the exception of `.net`, `haxe` and `java`, since the oficial maintaners don't supply a generic, non-version-specific alpine-based docker image or in the case of `haxe`, it's just messy.
 
 Just type:
 
