@@ -51,10 +51,15 @@ AMD Ryzen 7 1700 3.1GHz
 | 14 | Python        | 1.09s |
 
 
-###### The strange C case
+##### The strange C case
 
 Yeah, C is not doing well, it should be on par with c++, BUT, since C lacks some features the sorting algorithm can't be as efficient as C++'s, that's why it performs even worse than C#.
 
+##### The swift case
+
+So, Apple claims swift is as fast as C and way faster than Obj-C, so why on earth is it so slow compared to them in this test? There's probrably two reasons for that, I assume.
+First reason: maybe swift's compiler is just better optimzed for MacOS and iOS, and we are currently testing on linux not darwin.
+Second reason: if you count only the user-space time, you get around 0.11s, which would put swift close to "C", the issue is that at kernel level it takes another ~0.80s, I'm not really sure why that happens, this behaviour can also be seen on "Java"
 
 # Running yourself
 
