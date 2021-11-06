@@ -36,6 +36,9 @@ services:
   swift:
     build: ./swift/
 
+  nim:
+    build: ./nim/
+
   haxe-hl:
     build:
       context: ./haxe/

@@ -41,14 +41,15 @@ AMD Ryzen 7 1700 3.1GHz
 | 4  | C             | 0.11s |
 | 5  | GO            | 0.19s |
 | 6  | JavaScript    | 0.21s |
-| 7  | PHP           | 0.27s |
-| 8  | Haxe (HL/JIT) | 0.30s |
-| 9  | Java          | 0.34s |
-| 10 | Ruby          | 0.36s |
-| 11 | Lua           | 0.42s |
-| 12 | Dart          | 0.56s |
-| 13 | Swift         | 0.94s |
-| 14 | Python        | 1.09s |
+| 7  | Nim           | 0.22s |
+| 8  | PHP           | 0.27s |
+| 9  | Haxe (HL/JIT) | 0.30s |
+| 10 | Java          | 0.34s |
+| 11 | Ruby          | 0.36s |
+| 12 | Lua           | 0.42s |
+| 13 | Dart          | 0.56s |
+| 14 | Swift         | 0.94s |
+| 15 | Python        | 1.09s |
 
 
 ##### The strange C case
@@ -79,7 +80,6 @@ $ make result
 
 This is a list of languages that I want to create versions for (as soon as I have the free time):
 
-- nim
 - julia
 - rust
 - F#
