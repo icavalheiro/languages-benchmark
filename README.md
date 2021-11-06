@@ -18,7 +18,7 @@ First language to exit wins.
 This benchmark tests memory allocation, memory access and memory management. We are not testing threads, nor IO, but I assume IO won't change much on the result board (we are on 2021 and now every language supports async IO anyways), and threads would possibly only benefit GO for a small margin, not worth the hassle.
 
 
-### Result from 31/oct/2021
+### Result from 6/nov/2021
 
 #### Machine specs
 
@@ -79,5 +79,4 @@ This is a list of languages that I want to create versions for (as soon as I hav
 - rust
 - F#
 - closure
-- swifth
 - kotlin
