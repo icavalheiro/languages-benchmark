@@ -47,7 +47,8 @@ AMD Ryzen 7 1700 3.1GHz
 | 10 | Ruby          | 0.36s |
 | 11 | Lua           | 0.42s |
 | 12 | Dart          | 0.56s |
-| 13 | Python        | 1.09s |
+| 13 | Swift         | 0.94s |
+| 14 | Python        | 1.09s |
 
 
 ###### The strange C case

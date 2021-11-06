@@ -33,6 +33,9 @@ services:
   dart:
     build: ./dart/
 
+  swift:
+    build: ./swift/
+
   haxe-hl:
     build:
       context: ./haxe/
