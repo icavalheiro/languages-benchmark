@@ -39,7 +39,7 @@ AMD Ryzen 7 1700 3.1GHz
 | 2  | Haxe (C++)    | 0.09s |
 | 3  | C#            | 0.10s |
 | 4  | C             | 0.11s |
-| 5  | GO            | 0.19s |
+| 5  | GO            | 0.16s |
 | 6  | JavaScript    | 0.21s |
 | 7  | Nim           | 0.22s |
 | 8  | PHP           | 0.27s |
