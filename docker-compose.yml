@@ -39,6 +39,9 @@ services:
   nim:
     build: ./nim/
 
+  rust:
+    build: ./rust/
+
   haxe-hl:
     build:
       context: ./haxe/

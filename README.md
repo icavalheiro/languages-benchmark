@@ -36,20 +36,21 @@ AMD Ryzen 7 1700 3.1GHz
 | #  | Language      | Time  |
 |----|---------------|-------|
 | 1  | C++           | 0.07s |
-| 2  | Haxe (C++)    | 0.09s |
-| 3  | C#            | 0.10s |
-| 4  | C             | 0.11s |
-| 5  | GO            | 0.16s |
-| 6  | JavaScript    | 0.21s |
-| 7  | Nim           | 0.22s |
-| 8  | PHP           | 0.27s |
-| 9  | Haxe (HL/JIT) | 0.30s |
-| 10 | Java          | 0.34s |
-| 11 | Ruby          | 0.36s |
-| 12 | Lua           | 0.42s |
-| 13 | Dart          | 0.56s |
-| 14 | Swift         | 0.94s |
-| 15 | Python        | 1.09s |
+| 1  | Rust          | 0.07s |
+| 3  | Haxe (C++)    | 0.09s |
+| 4  | C#            | 0.10s |
+| 5  | C             | 0.11s |
+| 6  | GO            | 0.16s |
+| 7  | JavaScript    | 0.21s |
+| 8  | Nim           | 0.22s |
+| 9  | PHP           | 0.27s |
+| 10 | Haxe (HL/JIT) | 0.30s |
+| 11 | Java          | 0.34s |
+| 12 | Ruby          | 0.36s |
+| 13 | Lua           | 0.42s |
+| 14 | Dart          | 0.56s |
+| 15 | Swift         | 0.94s |
+| 16 | Python        | 1.09s |
 
 
 ##### The strange C case
@@ -81,7 +82,6 @@ $ make result
 This is a list of languages that I want to create versions for (as soon as I have the free time):
 
 - julia
-- rust
 - F#
 - closure
 - kotlin
