@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int comp(int *a, int *b)
-{
-    return *a - *b;
-}
+#include <stdbool.h>
 
 static void int_swap(int *a, int *b)
 {
@@ -13,41 +9,49 @@ static void int_swap(int *a, int *b)
     *b = t;
 }
 
-static void fast_sort(int *array, int n)
+static void quick_sort(int *array, int leftPos, int rightPos)
 {
-    int r, c;
+    int initialLeftPos = leftPos;
+    int initialRightPos = rightPos;
+    bool direction = true;
+    int pivot = rightPos;
 
-    //create heap
-    for (int i = n - 1; i >= 0; i--)
+    while ((leftPos - rightPos) < 0)
     {
-        for (r = i; r * 2 < n; r = c)
+        if (direction)
         {
-            c = r * 2 + 1;
-            if (c < (n - 1) && comp(&array[c], &array[c + 1]) < 0)
-                c++;
-
-            if (comp(&array[r], &array[c]) >= 0)
-                break;
-
-            int_swap(&array[r], &array[c]);
+            if (array[pivot] < array[leftPos])
+            {
+                int_swap(&array[pivot], &array[leftPos]);
+                pivot = leftPos;
+                rightPos--;
+                direction = !direction;
+            }
+            else
+                leftPos++;
+        }
+        else
+        {
+            if (array[pivot] <= array[rightPos])
+                rightPos--;
+            else
+            {
+                int_swap(&array[pivot], &array[rightPos]);
+                leftPos++;
+                pivot = rightPos;
+                direction = !direction;
+            }
         }
     }
 
-    //sort
-    for (int i = n - 1; i > 0; i--)
+    if (pivot - 1 > initialLeftPos)
     {
-        int_swap(&array[0], &array[i]);
-        for (r = 0; r * 2 < i; r = c)
-        {
-            c = r * 2 + 1;
-            if (c < i - 1 && comp(&array[c], &array[c + 1]) < 0)
-                c++;
+        quick_sort(array, initialLeftPos, pivot - 1);
+    }
 
-            if (comp(&array[r], &array[c]) >= 0)
-                break;
-
-            int_swap(&array[r], &array[c]);
-        }
+    if (pivot + 1 < initialRightPos)
+    {
+        quick_sort(array, pivot + 1, initialRightPos);
     }
 }
 
@@ -64,7 +68,7 @@ int main(int argc, char *argv[])
         array[i] = temp;
     }
 
-    fast_sort(array, n);
+    quick_sort(array, 0, n - 1);
     free(array);
     return 0;
 }

@@ -37,9 +37,9 @@ AMD Ryzen 7 1700 3.1GHz
 |----|---------------|-------|
 | 1  | C++           | 0.07s |
 | 1  | Rust          | 0.07s |
-| 3  | Haxe (C++)    | 0.09s |
-| 4  | C#            | 0.10s |
-| 5  | C             | 0.11s |
+| 1  | C             | 0.07s |
+| 4  | Haxe (C++)    | 0.09s |
+| 5  | C#            | 0.10s |
 | 6  | GO            | 0.16s |
 | 7  | JavaScript    | 0.21s |
 | 8  | Nim           | 0.22s |
@@ -52,10 +52,6 @@ AMD Ryzen 7 1700 3.1GHz
 | 15 | Swift         | 0.94s |
 | 16 | Python        | 1.09s |
 
-
-##### The strange C case
-
-Yeah, C is not doing well, it should be on par with c++, BUT, since C lacks some features the sorting algorithm can't be as efficient as C++'s, that's why it performs even worse than C#.
 
 ##### The swift case
 
