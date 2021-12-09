@@ -49,8 +49,17 @@ AMD Ryzen 7 1700 3.1GHz
 | 12 | Ruby          | 0.36s |
 | 13 | Lua           | 0.42s |
 | 14 | Dart          | 0.56s |
-| 15 | Swift         | 0.94s |
-| 16 | Python        | 1.09s |
+| 15 | GDScript      | 0.80s |
+| 16 | Swift         | 0.94s |
+| 17 | Python        | 1.09s |
+
+
+##### The GDScript case
+
+Unfortunately I could not run the docker-container with godot since it depends on x11 even for "no-window" runs... So I've computed the value from my own Pop_OS! version, which is pretty much the same as if I've runned from the container.
+
+Considering that most of that is due to the graphical engine booting up, the raw performance from GDScript would take around 0.24s, which would put it close to native-compiled language like Nim and even faster than PHP.
+The GDScript performance is simply the most impressive to me, specially because it's a very simple language mainted by a couple of people and it's just blazing fast!
 
 
 ##### The swift case
